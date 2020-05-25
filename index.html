@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DICE GAME</title>
+    <link href="style.css" rel="stylesheet" type="text/css" >
+</head>
+<body>
+    <h1>DICE GAME</h1>
+    
+
+    <div class="grid-container">
+        <div class="board">
+
+                <h1><span id="playerInfo">Player</span></h1>
+                <img src="img/Player.png">
+               
+            <div class="your-box">
+                <div class="playerDice goodDice" id=chosenDiceP1></div>
+                <div class="playerDice goodDice" id=chosenDiceP2></div>
+                <div class="playerDice goodDice" id=chosenDiceP3></div>
+                <div class="playerDice goodDice" id=chosenDiceP4></div>
+                <div class="playerDice goodDice" id=chosenDiceP5></div>
+                <div class="playerDice" id=drawnDiceP1></div>
+                <div class="playerDice" id=drawnDiceP2></div>
+                <div class="playerDice" id=drawnDiceP3></div>
+                <div class="playerDice" id=drawnDiceP4></div>
+                <div class="playerDice" id=drawnDiceP5></div>
+            </div>
+
+            <div class="buttons" id="buttons">
+                <h2><span id="turnLeft">Turn left: 3 </span></h2>
+                <button id="roundDice">Round dice</button>
+                <button id="endTurn">End Turn</button>
+            </div>
+            
+            <div class="bot-box">
+                <div class="botDice" id=drawnDiceB1></div>
+                <div class="botDice" id=drawnDiceB2></div>
+                <div class="botDice" id=drawnDiceB3></div>
+                <div class="botDice" id=drawnDiceB4></div>
+                <div class="botDice" id=drawnDiceB5></div>
+                <div class="botDice goodDice" id=chosenDiceB1></div>
+                <div class="botDice goodDice" id=chosenDiceB2></div>
+                <div class="botDice goodDice" id=chosenDiceB3></div>
+                <div class="botDice goodDice" id=chosenDiceB4></div>
+                <div class="botDice goodDice" id=chosenDiceB5></div>
+            </div>
+
+            <h1>Bot</h1>
+            <img src="img/bot.png">
+        </div>
+
+        <div class="scoreTable">
+            <h2>Rounds left: <span id="roundsLeft">10</span></h2>
+            <table>
+                <tr>
+                    <td></td>
+                    <td>You</td>
+                    <td>Bot</td>
+                </tr>
+                <tr>
+                    <td>Dice point</td>
+                    <td id="yourTable">0</td>
+                    <td id="botTable">0</td>
+                </tr>
+                <tr>
+                    <td>Three of a kind</td>
+                    <td id="yourTable">0</td>
+                    <td id="botTable">0</td>
+                </tr>
+                <tr>
+                    <td>Four of a kind</td>
+                    <td id="yourTable">0</td>
+                    <td id="botTable">0</td>
+                </tr>
+                <tr>
+                    <td>Full</td>
+                    <td id="yourTable">0</td>
+                    <td id="botTable">0</td>
+                </tr>
+                <tr>
+                    <td>Small straight</td>
+                    <td id="yourTable">0</td>
+                    <td id="botTable">0</td>
+                </tr>
+                <tr>
+                    <td>Big straight</td>
+                    <td id="yourTable">0</td>
+                    <td id="botTable">0</td>
+                </tr>
+                <tr>
+                    <td>General</td>
+                    <td id="yourTable">0</td>
+                    <td id="botTable">0</td>
+                </tr>
+                <tr>
+                    <td>Round Points:</td>
+                    <td id="yourTable">0</td>
+                    <td id="botTable">0</td>
+                </tr>
+                <tr>
+                    <td>Total Score:</td>
+                    <td id="yourTotalScore">0</td>
+                    <td id="botTotalScore">0</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="rules">
+
+        </div>
+
+    </div>
+    <button class="reset" onclick=location.reload();>Reset Game</button>
+    <!--<button id="botButton">Bot button</button>-->
+    <span id="gamePrompt">Player turn. Round and choose dice's.</span>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
+

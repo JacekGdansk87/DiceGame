@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    height: 1000px;
+    width: 1000px;
+    margin: auto;
+    color:white;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+img {
+    display: flex;
+    width: 75px;
+    margin:5px auto;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 30% 35% 35%;
+    align-items: center;
+    text-align: center;
+}
+
+button {  
+	background:linear-gradient(to bottom, #7892c2 5%, #a3ccff 100%);
+	background-color:#7892c2;
+	border-radius:10px;
+	border:1px solid #e8eeff;
+	display:inline-block;
+    cursor:pointer;
+    font-size: medium;
+    font-weight: 600;
+	color:#ffffff;
+    padding:12px 17px;
+    margin: 5px;
+    text-shadow:0px 1px 0px #283966;
+    box-shadow: 0px 0px 0px 2px #9fb4f2;
+}
+
+button:hover {
+    background:linear-gradient(to bottom, #0f8f1a 5%, #1b5f0f 100%);
+}
+
+.span {
+    display: flex;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: 10px auto;
+    border: 3px solid white;
+}
+
+.your-box, .bot-box {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: 100px 100px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.playerDice, .botDice{
+    border: 2px solid white;
+    margin: 3px;
+    background-size: cover;
+}
+
+.playerDice:hover{
+    box-shadow: 0px 0px 0px 3px #31ec10;
+    opacity:1;
+}
+
+.goodDice{
+    background-color: darkgreen;
+}
+
+.goodDice:hover{
+    box-shadow: 0px 0px 0px 3px #ec1010;
+}
+
+.scoreTable{
+    display: grid;
+    align-content: space-evenly;
+    margin: 0 5% 30% 5%;
+
+}
+
+.scoreTable td, .scoreTable tr {
+    border: 3px solid white;
+    text-align: center;
+    font-size: 1.3rem;  
+}
+
+#yourTable{
+    background-color: darkviolet;
+}
+#botTable{
+    background-color: darkred;
+}
+
+
+.reset {
+    margin-left: 10%;
+}
+
+#gamePrompt{
+   margin-left: 5%;
+   color: green;
+   font-size: 2rem;
+   font-weight: 700;
+}
