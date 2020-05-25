@@ -1,28 +1,24 @@
 Dice Game
 
-1. Stworzy� szablon.
-Gra 40% Wyniki 20% Zasady 40%
-Przy mniejszym formacie 60% zasady id� w d�.
-2. Mechanizm gry:
-a)
+Points
+Points are adde from each cube. Additionally we receive a bonus for:
+Thre -Three same cubes            5 points
+Four -Four same cubes            10 points
+Full -Three and two same cubes   25 points
+Small straight -Dices: 1,2,3,4,5 35 points
+Big straight   -Dices: 2,3,4,5,6 40 points
+General     -Five same cubes     50 points
 
+Rules:
+Game  
+The Game lasts 10 turns, each player has three dice roll.
+The first of them are always with 5 dice's. And next we roll only bad dice.
+Each round we have 3 turns.
 
+After 10 round we have end Game. 
+The winner is the player who has the most points.
 
-Punktacja:
-Punkty sumujemy z kazdej kostki dodatkowo otrzymuje bonus za:
-3 jednakowe Trzy jednakowe kosci   5 punktow
-4 jednakowe Cztery jednakowe kosci 10 punkttw
-Full        Trojka i para         25 punktow
-Maly strit  cztery kosci z oczkami po kolei 35 punktow
-Duzy strit  Piec kosci z oczkami po kolei 40 punktow
-General     Piec jednakowych kosci       50 punktow
-
-Opis i zasady:
-Gra trwa 10 kolejek ka�dy z graczy ma do dyspozycji trzy rzuty kostkami. Pierwszy z nich odbywa si� zawsze wszystkimi pi�cioma kostkami, a w drugim i trzecim, kt�re nie s� obowi�zkowe, wybrane kostki mog� zosta� zatrzymane; rzut odbywa si� wtedy tylko niezatrzymanymi.
-
-Koniec gry nast�puje po zako�czeniu wszystkich 10 kolejek, kiedy wszystkie kategorie tabeli punktacji s� wype�nione.Wygrywa gracz, kt�ry zdoby� najwi�cej punkt�w (w sumie z g�rnej i dolnej cz�ci tabeli)
-
-Mechanizm:
+Combinations checking mechanism :
 3 2 3 3 2
 
 3 compare 2,3,3,2 = 2
@@ -44,4 +40,16 @@ Mechanizm:
 3 compare 3 = 10-general 
 
 1 2 3 4 5
-0 0 0 0 0  //strity 0 i wartość 1 lub 6
+0 0 0 0 0  
+Condition of straight:
+0 other Combinations 
+we need one value 1 or 6
+all dice are not null
+//
+
+Bot mechanism:
+Bot is searching for two same dice. 
+If he find then he remember first type and taking all same dice's.
+If he find next two same dices then he remember second type and he also taking all same dice's.
+//
+
